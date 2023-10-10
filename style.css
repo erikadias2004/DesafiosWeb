@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+.fundo1 {
+    background-image: url(./img/fundo.png);
+}
+.fundo2 {
+    background-image: url(./img/fundo2.png);
+}
+
+.logo {
+    margin: 1% 0 0 20%;
+}
+
+.capa {
+    width: 60%;
+    height: 415px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+main section {
+    margin: 0px 20% 0px 20%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: .8rem;
+    margin-right: 20%;
+}
+
+a:nth-last-child(1) {
+    margin-right: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
