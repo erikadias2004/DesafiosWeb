@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body class="fundo2">
+    <header>
+        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" alt="">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/quemsomos">Quem somos</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <h4>Todos os direitos reservados</h4>
+</footer>

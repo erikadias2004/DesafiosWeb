@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="fundo2">
-    <header>
-        <img class="logo" src="./img/logo.png" alt="">
-        <nav>
-            <a href="./home.html">Home</a>
-            <a href="">Quem somos</a>
-            <a href="./contato.html">Contato</a>
-        </nav>
-    </header>
+{% extends 'base.html' %}
+{% block title %}
+Quem somos
+{% endblock %}
+
+{% block content %}
     <main>
         <section>
             <br>
@@ -44,8 +33,4 @@
             <p>Lorem <strong>ipsum dolor</strong> sit, amet consectetur adipisicing elit. Alias nihil cum ut necessitatibus? Voluptatibus, ipsam, quia ipsum nihil rerum laudantium excepturi neque fugit porro eius in. Aliquam expedita earum iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quam vel cupiditate, natus officiis, ducimus accusamus iure, eius enim sit omnis reiciendis illum? Eveniet temporibus maiores et sed, enim laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente hic delectus a, doloribus doloremque! Quis voluptatem ipsum quos quibusdam, inventore eius blanditiis et, possimus provident minima facere, rerum fugiat!</p>
         </section>
     </main>
-    <footer>
-        <br>
-        <br>
-        <h4>Todos os direitos reservados</h4>
-    </footer>
+{% endblock %}

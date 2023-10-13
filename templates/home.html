@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="fundo1">
-    <header>
-        <img class="logo" src="./img/logo.png" alt="">
-        <nav>
-            <a href="">Home</a>
-            <a href="./quemSomos.html">Quem somos</a>
-            <a href="./contato.html">Contato</a>
-        </nav>
-    </header>
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
     <main>
         <br>
         <div>
-            <img class="capa" src="./img/capa.png" alt="">
+            <img class="capa" src="{{url_for('static', filename='img/capa.png')}}" alt="">
         </div>
         <section>
             <br>
@@ -29,10 +18,4 @@
             <p>Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Sed deleniti nam expedita sit quam provident vero laudantium tempore id a pariatur vitae facilis, molestiae earum dicta, minus quos quibusdam vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam dolorum molestias voluptas iste itaque quisquam aspernatur. Autem consequatur dolor dicta est odit eaque eius repudiandae quis molestias, amet nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, modi rerum. Nam tenetur, dolore eos, aperiam hic accusantium velit odio aliquam cupiditate soluta quasi corporis recusandae, provident nemo blanditiis perspiciatis?</p>
         </section>
     </main>
-    <footer>
-        <br>
-        <br>
-        <h4>Todos os direitos reservados</h4>
-    </footer>
-</body>
-</html>
+{% endblock %}
